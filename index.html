@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <!-- tailwin and daisy ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- poppins google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- custom config of tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'orange-color': "#E76F51",
+                'bike-primary-bg': "rgba(231, 111, 81, 0.10)",
+                'dark-color': "#6C6C6C"
+              }
+            }
+          }
+        }
+      </script>
+
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+                background-color: white;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="md:container md:mx-auto px-5">
+        <nav>
+            <div class="navbar max-w-full ">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content text-base mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-52 text-white ">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-2xl md:text-3xl px-0 text-black">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal  gap-5 pr-5 text-black">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn  bg-orange-color text-white px-3 md:px-6  rounded-md">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider or carousel start here  -->
+        <div class="carousel w-full bg-bike-primary-bg md:h-[550px]">
+            <!-- slide one  -->
+            <div id="slide1" class="carousel-item relative w-full ">
+               <div class="flex flex-col md:flex-row  w-full items-center gap-5 p-4 md:p-24">
+                <div class="flex-1 space-y-2 md:space-y-7">
+                    <h1 class="text-2xl md:text-5xl font-bold text-black">Ride-on R15 V4 <br> with Smile</h1>
+                    <p class="text-dark-color text-xs">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn  bg-orange-color text-white text-xs px-2 md:px-6  rounded-md">Purchase</button>
+                </div>
+
+                <div class="flex-1">
+                    <img class="w-full" src=".//images/slider/bike1.png" alt="">
+                </div>
+               </div>                
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-gray-200 text-black border-0">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-gray-200 text-black border-0">❯</a>
+              </div>
+            </div> 
+            <!-- slide two -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col md:flex-row  w-full items-center gap-5 p-4 md:p-24">
+                    <div class="flex-1 space-y-2 md:space-y-7">
+                        <h1 class="text-2xl md:text-5xl font-bold text-black">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-dark-color text-xs">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn  bg-orange-color text-white text-xs px-2 md:px-6  rounded-md">Purchase</button>
+                    </div>
+    
+                    <div class="flex-1">
+                        <img class="w-full" src=".//images/slider/bike2.png" alt="">
+                    </div>
+                   </div>              
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-gray-200 text-black border-0">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-gray-200 text-black border-0">❯</a>
+              </div>
+            </div> 
+            <!-- slide three -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col md:flex-row  w-full items-center gap-5 p-4 md:p-24">
+                    <div class="flex-1 space-y-2 md:space-y-7">
+                        <h1 class="text-2xl md:text-5xl font-bold text-black">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-dark-color text-xs">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn  bg-orange-color text-white text-xs px-2 md:px-6  rounded-md">Purchase</button>
+                    </div>
+    
+                    <div class="flex-1">
+                        <img class="w-full" src=".//images/slider/bike3.png" alt="">
+                    </div>
+                   </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-gray-200 text-black border-0">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-gray-200 text-black border-0">❯</a>
+              </div>
+            </div> 
+            <!-- slide four  -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col md:flex-row  w-full items-center gap-5 p-4 md:p-24">
+                    <div class="flex-1 space-y-2 md:space-y-7">
+                        <h1 class="text-2xl md:text-5xl font-bold text-black">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-dark-color text-xs">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn  bg-orange-color text-white text-xs px-2 md:px-6  rounded-md">Purchase</button>
+                    </div>
+    
+                    <div class="flex-1">
+                        <img class="w-full" src=".//images/slider/bike4.png" alt="">
+                    </div>
+                   </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-gray-200 text-black border-0">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-gray-200 text-black border-0">❯</a>
+              </div>
+            </div>
+          </div>
+
+    </header>
+
+    <!-- main start here  -->
+    <main  class="md:container md:mx-auto">
+
+    </main>
+</body>
+
+</html>
